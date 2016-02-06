@@ -1,0 +1,34 @@
+body {
+  padding-top: 50px;
+  background-color : yellow;
+}
+.major {
+  padding: 40px 15px;
+  text-align: center;
+  background-color : red;
+  font-size: 150%;
+  
+}
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: blue;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
